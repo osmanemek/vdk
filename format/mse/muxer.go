@@ -1,10 +1,10 @@
 package mse
 
 import (
-	"github.com/deepch/vdk/av"
-	"github.com/deepch/vdk/format/mp4f"
 	"github.com/gobwas/ws"
 	"github.com/gobwas/ws/wsutil"
+	"github.com/osmanemek/vdk/av"
+	"github.com/osmanemek/vdk/format/mp4f"
 	"net"
 	"net/http"
 )

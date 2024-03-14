@@ -6,9 +6,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/deepch/vdk/av"
-	"github.com/deepch/vdk/format/fmp4/fmp4io"
-	"github.com/deepch/vdk/format/fmp4/fragment"
+	"github.com/osmanemek/vdk/av"
+	"github.com/osmanemek/vdk/format/fmp4/fmp4io"
+	"github.com/osmanemek/vdk/format/fmp4/fragment"
 )
 
 var (

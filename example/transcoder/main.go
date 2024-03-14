@@ -2,8 +2,8 @@ package main
 
 import (
 	"context"
-	"github.com/deepch/vdk/format/rtspv2"
-	"github.com/deepch/vdk/format/ts"
+	"github.com/osmanemek/vdk/format/rtspv2"
+	"github.com/osmanemek/vdk/format/ts"
 	"log"
 	"os/exec"
 	"time"

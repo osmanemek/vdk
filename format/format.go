@@ -1,13 +1,13 @@
 package format
 
 import (
-	"github.com/deepch/vdk/av/avutil"
-	"github.com/deepch/vdk/format/aac"
-	"github.com/deepch/vdk/format/flv"
-	"github.com/deepch/vdk/format/mp4"
-	"github.com/deepch/vdk/format/rtmp"
-	"github.com/deepch/vdk/format/rtsp"
-	"github.com/deepch/vdk/format/ts"
+	"github.com/osmanemek/vdk/av/avutil"
+	"github.com/osmanemek/vdk/format/aac"
+	"github.com/osmanemek/vdk/format/flv"
+	"github.com/osmanemek/vdk/format/mp4"
+	"github.com/osmanemek/vdk/format/rtmp"
+	"github.com/osmanemek/vdk/format/rtsp"
+	"github.com/osmanemek/vdk/format/ts"
 )
 
 func RegisterAll() {

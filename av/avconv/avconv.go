@@ -5,10 +5,10 @@ import (
 	"io"
 	"time"
 
-	"github.com/deepch/vdk/av"
-	"github.com/deepch/vdk/av/avutil"
-	"github.com/deepch/vdk/av/pktque"
-	"github.com/deepch/vdk/av/transcode"
+	"github.com/osmanemek/vdk/av"
+	"github.com/osmanemek/vdk/av/avutil"
+	"github.com/osmanemek/vdk/av/pktque"
+	"github.com/osmanemek/vdk/av/transcode"
 )
 
 var Debug bool
