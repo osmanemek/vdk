@@ -301,7 +301,7 @@ func (client *RTSPClient) startStream() {
 			content[3] = header[3]
 			n, rerr := io.ReadFull(client.connRW, content[4:length+4])
 			if rerr != nil || n != int(length) {
-				client.Println("RTSP Client RTP ReadFull", err)
+				client.Println("RTSP Client RTP ReadFull", rerr)
 				return
 			}
 
