@@ -292,6 +292,7 @@ func (client *RTSPClient) startStream() {
 			length := int32(binary.BigEndian.Uint16(header[2:]))
 			if length > 65535 || length < 12 {
 				client.Println("RTSP Client RTP Incorrect Packet Size")
+				client.Println("length:", length)
 				return
 			}
 			content := make([]byte, length+4)
@@ -302,6 +303,7 @@ func (client *RTSPClient) startStream() {
 			n, rerr := io.ReadFull(client.connRW, content[4:length+4])
 			if rerr != nil || n != int(length) {
 				client.Println("RTSP Client RTP ReadFull", rerr)
+				client.Println("RTSP Client RTP content:", content)
 				return
 			}
 
@@ -355,6 +357,8 @@ func (client *RTSPClient) startStream() {
 		default:
 			client.Println("RTSP Client RTP Read DeSync")
 			client.Println("header[0]:", header[0])
+			client.Println("header:")
+			client.Println(header)
 			return
 		}
 	}
