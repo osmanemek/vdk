@@ -359,7 +359,8 @@ func (client *RTSPClient) startStream() {
 			client.Println("header[0]:", header[0])
 			client.Println("header:")
 			client.Println(header)
-			return
+			//return
+			continue
 		}
 	}
 }
