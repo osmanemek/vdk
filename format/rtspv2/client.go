@@ -355,10 +355,10 @@ func (client *RTSPClient) startStream() {
 				}
 			}
 		default:
-			client.Println("RTSP Client RTP Read DeSync")
+			client.Println("RTSP Client RTP Read DeSync pURL:", client.pURL.String())
+			client.Println("RTSP Client RTP Read DeSync ons.URL:", client.options.URL)
 			client.Println("header[0]:", header[0])
-			client.Println("header:")
-			client.Println(header)
+			client.Println("header:", header)
 			//return
 			continue
 		}
